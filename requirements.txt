@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+Lotiefiles
+pillow
+pickel
+requests
+pathlib
