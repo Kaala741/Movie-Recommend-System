@@ -20,7 +20,7 @@ This project is a content-based movie recommendation system built using Python, 
 
 ## **Demo**
 Check out the live demo of the app:  
-[![Streamlit App](https://movie-recommender-k.streamlit.app/)
+[![Streamlit App](https://movie-recommender-k.streamlit.app)
 
 ---
 
@@ -49,7 +49,7 @@ streamlit run app.py
 ```
 5.Open your browser and go to http://localhost:8501 to view the app.
 
-## **File Structure
+## **File Structure** :
 ``` 
 Movie-Recommend-System/
 ├── app.py                       # Streamlit app script
