@@ -20,18 +20,19 @@ This project is a content-based movie recommendation system built using Python, 
 
 ## **Demo**
 Check out the live demo of the app:  
-[![Streamlit App](https://movie-recommender-k.streamlit.app)
-
+```
+[Check out the Movie Recommendation System](https://movie-recommender-k.streamlit.app/)
+```
 ---
 
 ## **Installation**
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
-   ```
+ ```
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
-    ```
+ ```
 2.**Set up a virtual environment**:
 ```
 python -m venv venv
