@@ -19,10 +19,10 @@ This project is a content-based movie recommendation system built using Python, 
 ---
 
 ## **Demo**
-Check out the live demo of the app:  
-```
-[Check out the Movie Recommendation System](https://movie-recommender-k.streamlit.app/)
-```
+Check out the live demo of the app:  [website link] (https://movie-recommender-k.streamlit.app)
+
+![Screenshots](readme-source/image_k.png)
+![Screenshots](readme-source/image_k1.png)
 ---
 
 ## **Installation**
