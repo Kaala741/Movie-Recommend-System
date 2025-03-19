@@ -9,9 +9,8 @@ from PIL import Image
 from pathlib import Path
 
 st.set_page_config(page_title="Movie_Recommend_page", page_icon=":clapper:", layout="wide")
-st.title("MOVIE RECOMMENDATION SYSTEM")
+st.title(":red[MOVIE RECOMMENDATION SYSTEM ]")
 st.write("\n\n")
-st.header("welcome to my page !")
 def load_lottieurl(url:str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -29,15 +28,15 @@ def load_lottiefile(filepath:str):
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("style2/style1.css")
+local_css("style.css")
 
-lottie_coding = load_lottieurl("https://lottie.host/05d8286a-86bb-483e-a845-5715aca4241e/hrUyVR89oh.json")
-lottie_coding2 = load_lottiefile("lottiefiles/anime.json")
+lottie_coding = load_lottiefile("anime2.json")
+lottie_coding2 = load_lottiefile("anime.json")
 
 with st.container():
     left_column,right_column=st.columns(2)
     with left_column:
-        st.header("ABOUT")
+        st.header(":blue[ABOUT THIS PAGE]")
         st.write("##")
         st.write(
     """
@@ -71,7 +70,7 @@ def recommend(movie):
 
 
 st.header('Movie Recommender')
-movies_dict= pickle.load(open('movies_dict.pkl','rb'))
+movies_dict= pickle.load(open('movie_list.pkl','rb'))
 movies=pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl','rb'))
 
@@ -100,52 +99,6 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
-# --- profile section ---#  
-with st.container():       
-    st.write("---")
-# --- PATH SETTINGS ---
-    current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-    css_file = current_dir / "styles" / "main.css"
-    resume_file = current_dir/ "Manikanta_resume.pdf"
-    profile_pic = current_dir / "profile-pic.png"
-    def local_css1(file_name):
-        with open(file_name) as f:
-           st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    local_css1("style2/style1.css")
-# --- GENERAL SETTINGS ---
-    NAME ="Manikanta seelam"
-    DESCRIPTION = """
-      Highly-driven machine learning student with growing knowledge in Dl with python,nlp,data science and DSA,seeking a Machine learning enginnering internship.
-      I’m ready to contribute my passion and skills to help drive innovation as a global technology leader by supporting data-driven decision-making.
-    """
-    EMAIL = "seelammanikanta777@email.com"
-    SOCIAL_MEDIA = {
-    "LinkedIn": "https://www.linkedin.com/in/kaala-741-741633d4338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "GitHub": "https://github.com/Kaala741",
-    "Leetcode": "https://leetcode.com/u/Manikanta233/",
-    }
-    with open(resume_file, "rb") as pdf_file:
-       PDFbyte = pdf_file.read()
-       profile_pic = Image.open("images/profile-pic.png")
-    
-    col1, col2 = st.columns(2, gap="small")
-    with col1:
-        st.image(profile_pic, width=300)
-        st.write("📫", EMAIL)
-
-    with col2:
-       st.title(NAME)
-       st.write(DESCRIPTION)
-       st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream",
-        )
-       cols = st.columns(len(SOCIAL_MEDIA))
-       for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-           cols[index].write(f"[{platform}]({link})")
-
 
 # --- HERO SECTION ---
 with st.container():
@@ -155,7 +108,7 @@ with st.container():
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
-    <form action="https://formsubmit.co/seelammanikanta777@gmail.com" method="POST">
+    <form action="https://kaalaa741@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
