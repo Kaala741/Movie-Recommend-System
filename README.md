@@ -20,9 +20,9 @@ This project is a content-based movie recommendation system built using Python, 
 
 ## **Demo**
 Check out the live demo of the app: 
-        -**[website links]** 
--(https://movie-recommender-k.streamlit.app/)
--(https://movie-recommend-system-2w3p.onrender.com)
+       - **[website links]** 
+- (https://movie-recommender-k.streamlit.app/)
+- (https://movie-recommend-system-2w3p.onrender.com)
 
 
 
@@ -64,6 +64,7 @@ streamlit run app.py
 ```
 5.Open your browser and go to http://localhost:8501 to view the app.
 
+---
 ## **File Structure** :
 ``` 
 Movie-Recommend-System/
@@ -78,10 +79,15 @@ Movie-Recommend-System/
     ├── tmdb_5000_movies.csv
     └── tmdb_5000_credits.csv
 ```
+
+---
+
 ## **USAGE** :
 1.Select a movie from the dropdown menu.
 2.Click the Recommend button.
 3.The app will display the top 5 movies similar to your selection.
+
+---
 
 ## **Technologies Used** :
 ```
@@ -89,13 +95,18 @@ Python: Core programming language.
 Pandas: Data manipulation and analysis.
 Scikit-learn: Machine learning and cosine similarity.
 Streamlit: Web app framework for deployment.
-```  
+```
+---
+
 ## **Dataset** :
 The dataset used in this project is the TMDB 5000 Movie Dataset, which contains metadata for over 5000 movies. You can find the dataset on Kaggle.
+---
 
 ## **License** 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+---
 ## **Acknowledgments** :
 Dataset: TMDB 5000 Movie Dataset.
+---
 Streamlit: For making deployment easy and fun.
