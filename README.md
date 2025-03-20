@@ -20,7 +20,7 @@ This project is a content-based movie recommendation system built using Python, 
 
 ## **Demo**
 Check out the live demo of the app: 
-       - **[website links]** 
+- [website links] 
 - (https://movie-recommender-k.streamlit.app/)
 - (https://movie-recommend-system-2w3p.onrender.com)
 
@@ -99,7 +99,8 @@ Streamlit: Web app framework for deployment.
 ---
 
 ## **Dataset** :
-The dataset used in this project is the TMDB 5000 Movie Dataset, which contains metadata for over 5000 movies. You can find the dataset on Kaggle.
+  The dataset used in this project is the TMDB 5000 Movie Dataset, which contains metadata for over 5000 movies. You can find the dataset on Kaggle.
+  
 ---
 
 ## **License** 
@@ -107,6 +108,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 ## **Acknowledgments** :
-Dataset: TMDB 5000 Movie Dataset.
+ Dataset: TMDB 5000 Movie Dataset.
+ 
 ---
 Streamlit: For making deployment easy and fun.
